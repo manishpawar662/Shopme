@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/ud/popper.min.js"></script> 
+    <script src="https://maxcdn. bootstrapcdn.com/bootstrap/1.5.0/js/bootstrap.min.js"></script>
+<style>
+    .center{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    input{
+        margin:20px 0 20px 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="center">
+        <form enctype=multipart/form-data autocomplete="off" class="bg-secondary w-100 p-4" method="POST" action="upload_products.php">
+            <h3 class="text-white">Upload Products</h3>
+            <input required class="form-control text-danger" name="name" placeholder="Product name">
+            <textarea required class="form-control" name="description" rows="5" placeholder="Product Description"></textarea>
+            <input required class="form-control" name="price" placeholder=" Product price" type="number">
+            <input required class="form-control" name="imdata" type="file">
+            <div class="text-center"> 
+            <input class=" form-control btn btn-success" type="submit" value="upload">
+             </div>
+             <div class='text form-control btn btn-warning'>
+                <a href='view_products.php'>
+                     View Products
+                </a>
+                </div>";
+            </form>
+    </div>
+</body>
+</html>     
